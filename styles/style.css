@@ -3,3 +3,29 @@
 @import url(./a11y.css);
 @import url(./theme.css);
 @import url(./base.css);
+
+/* 공통 스타일 */
+body {
+  background-color: var(--yellow);
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+/* max-width를 주는 이유? 레이아웃을 캐스캐이드되는 것을 막아 성능 향상 */
+  body {
+    background-color: var(--green)
+  }
+}
+
+/* 중단점 - 769px 이상 */
+@media (min-width: 769px) {
+  body {
+    background-color: var(--green);
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-color: var(--blue);
+  }
+}
+
