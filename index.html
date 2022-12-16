@@ -34,10 +34,11 @@
     <form action="https://formspree.io/seulbinim@gmail.com" method="POST" class="searchForm">
       <fieldset>
         <legend>검색</legend>
-        <div class="searchForm__group">
+        <div class="searchForm__group"> <!-- display: flex / row nowrap / flex-end -->
           <div class="formInput">
             <label for="search" class="a11yHidden formInput__label">검색어</label>
             <input id="search" class="formInput__input" type="search" required placeholder="검색어를 입력하세요." name="search" />
+            <!-- input: width 100% / flex-glow -->
           </div>
           <button type="submit" class="button button--primary button--fill">검색</button>
         </div>
