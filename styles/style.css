@@ -259,8 +259,42 @@ input[type="search"] {
 
 /* 공통 트위터 */
 .twitter {
-  /* background: burlywood; */
   grid-area: twitter;
+}
+
+.twitter__container{
+  background: burlywood;
+
+}
+.twitter__userInfo{
+  background-color: aqua;
+  display: inline-flex;
+  
+}
+/* 동그란 형태의 사진 집어넣기 */
+.twitter__userProfile{
+  width: 30%;
+  min-width: 3.125rem;
+  max-width: 5.625rem;
+  aspect-ratio: 1/1;
+  float: right;
+  shape-outside: circle(50%);
+  margin-left: var(--spacing-xs);
+}
+
+.twitter__userProfileImage{
+  object-fit: cover;
+  object-position: 30% 40%;
+  width: 100%;
+  height: 100%;
+  border-radius: 70%;
+  border: 1px solid #000;
+}
+.twitter__summary{
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+.twitter__data{
 }
 
 /* 모바일 디바이스 (Mobile Device) */
